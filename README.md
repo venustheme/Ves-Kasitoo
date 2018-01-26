@@ -12,25 +12,40 @@ Venus proudly introduces Kasitoo, a new free magento2 theme for an online store.
 - Get Support: https://venustheme.ticksy.com/
 
 
-## 2. How to install Extension
+## 2. How to install Theme
 
-### Install via composer (recommend)
+Download and Upload the Theme
+Once you have download the Magento 2 theme of your choice, you will receive a zipped version. Unzip it and upload the files to the public root directory of your Magento 2 store.
 
-Your magento 2 extensions can be installed in a few minutes by going through these following steps
+Note: You can use FileZilla for it too.
 
-Step 1: Download/purchase the extension
+Connect Store with SSH
+Now go to the root directory of your store via SSH.
 
-Step 2: Unzip the file in a temporary directory
+Upgrade the setup by running this command:
 
-Step 3: Upload it to your Magento installation root directory
+php bin/magento setup:upgrade
 
-Step 4: Disable the cache under System­ >> Cache Management
+Now deploy the static content by running this command:
 
-Step 5: Enter the following at the command line:
+php bin/magento setup:static-content:deploy
 
-php ­f bin/magento setup:upgrade
+Activate the Theme
+Navigate to CONTENT → Configuration from the Admin Panel of your store.
 
-Step 6: After opening Stores­ >>Configuration >­>Advanced >­> Advanced, the module will be shown in the admin panel
+Click on Edit to apply the theme.
+
+you can change and activate your theme. Select your theme from Applied Theme option and then just click on Save Configuration.
+
+Go to the web browser and launch your store, and you will be greeted with your newly applied theme.
+
+Wrapping Up
+Every ecommerce store has some requirements that makes it successful, and your store’s theme is one of them. You can easily install and theme on your Magento 2 if you follow the tutorial above. But if you want, you can also create your own custom theme in Magento 2.
+
+If you have any confusion or you think I have missed anything, use the comment box below!
+
+View detail: https://blog.landofcoder.com/magento-2-install-theme-manually/
+
 ## 3. What make people fall in love with the extensions
 
 ### Free Magento 2 Responsive Design & Retina Ready
